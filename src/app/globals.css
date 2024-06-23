@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.7.5/src/app/ci.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css");
+
+@font-face {
+  font-family: "headerHeading";
+  src: url("/fonts/heading2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Ensure overflow is not set to hidden */
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+}
+
+.font-fam {
+  font-family: "Lexend", sans-serif;
+}
+
+.first-color {
+  background: #1d1716;
+}
+
+.bg-color {
+  background: #402a23;
+}
+
+.third-color {
+  background: #a55233;
+}
+
+.fontColor {
+  color: #f3bc77;
+}
+
+.header-font {
+  font-family: headerHeading;
+}
