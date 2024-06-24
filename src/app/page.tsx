@@ -6,33 +6,16 @@ import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
 
-gsap.registerPlugin(ScrollTrigger);
-
 export default function Home() {
   const mainRef = useRef<HTMLDivElement>(null);
-  const heroSectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     gsap.to(mainRef.current, {
       opacity: 1,
       duration: 2,
       ease: "power2.out",
       delay: 1,
-    });
-
-    gsap.to(heroSectionRef.current, {
-      opacity: 1,
-      y: 0,
-      duration: 2,
-      ease: "power2.out",
-      delay: 0.5,
-      stagger: 1,
-      scrollTrigger: {
-        trigger: heroSectionRef.current,
-        start: "top center",
-        end: "bottom center",
-        scrub: 1,
-      },
     });
   }, []);
 
@@ -48,14 +31,11 @@ export default function Home() {
             <FlipWords
               duration={2000}
               className="fontColor"
-              words={["creative", "responsive", "beautiful"]}
+              words={["adaptive", "dynamic", "beautiful", "elegant", "awesome"]}
             />
             web app with MERN stack
           </div>
-          <div
-            className="w-full flex md:flex-row flex-col opacity-0"
-            ref={heroSectionRef}
-          >
+          <div className="w-full flex md:flex-row flex-col ">
             <div className="md:w-1/2  w-full flex items-center  justify-center">
               <div className="md:w-[50%] w-[60%] overflow-visible rounded-xl">
                 <img
