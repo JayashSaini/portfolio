@@ -25,14 +25,14 @@ const Navbar: React.FC = () => {
     });
 
     timeline
-      .fromTo(nameRef.current, { y: 50, opacity: 0 }, { y: 0, opacity: 1 })
+      .to(navRef.current, { opacity: 1 })
+      .fromTo(nameRef.current, { y: -50, opacity: 0 }, { y: 0, opacity: 1 })
       .fromTo(
         resumeRef.current,
         { y: -50, opacity: 0 },
-        { y: 0, opacity: 1 },
+        { y: 0, opacity: 1, delay: 0.5 },
         "-=1"
-      )
-      .fromTo(navRef.current, { opacity: 0 }, { opacity: 1 }, "-=0.5");
+      );
   }, []);
 
   return (
@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
     >
       <nav
         ref={navRef}
-        className="border-b-2 border-[#f3bb7780] gap-3 z-10 w-full mx-5 max-w-screen-lg"
+        className="border-b-2 border-[#f3bb7780] gap-3 z-10 w-full mx-5 max-w-screen-lg opacity-0"
       >
         <div className="container md:py-6 py-4 flex justify-between items-center mx-auto px-4">
           <a

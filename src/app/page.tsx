@@ -50,11 +50,11 @@ export default function Home() {
               </div>
             </div>
             <div className="md:w-1/2 w-full md:text-xl text-sm  text-orange-50 md:text-left text-center mt-5">
-              👋 Hi there, I'm Jayash! I'm a results-driven MERN stack developer
-              with a passion for building cutting-edge web applications that
-              make an impact.{" "}
+              👋 Hi there, I&apos;m Jayash! I&apos;m a results-driven MERN stack
+              developer with a passion for building cutting-edge web
+              applications that make an impact.{" "}
               <span className="md:flex hidden">
-                I've honed my skills in MongoDB, Express.js, React.js, and
+                I&apos;ve honed my skills in MongoDB, Express.js, React.js, and
                 Node.js to deliver high-quality solutions tailored to meet
                 specific user needs. With a strong foundation in full-stack
                 development, I thrive in environments that challenge me to
