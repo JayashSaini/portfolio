@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 import Link from "next/link";
 
 import {
@@ -23,10 +22,10 @@ const icons = [
     name: "linkedin",
   },
   {
-    icon: "./socialIcons/discord.svg",
+    icon: "./socialIcons/twitter.svg",
     delay: 1.5,
-    link: "https://discord.com/users/1026106296149221467",
-    name: "discord",
+    link: "https://twitter.com/JayashSaini73",
+    name: "twitter",
   },
   {
     icon: "./socialIcons/instagram.svg",
@@ -43,40 +42,20 @@ const icons = [
 ];
 const Socials: React.FC = () => {
   return (
-    <div className="z-40 flex w-full items-center justify-center mt-14 gap-4 ">
+    <div className="z-40 flex w-full items-center justify-center mt-8 gap-4 ">
       {icons.map((icon, index) => (
-        <motion.div
-          key={index}
-          initial={{ y: 0 }}
-          animate={{
-            y: [-13, 0, -13],
-            transition: {
-              duration: 2,
-              repeat: Infinity,
-              delay: icon.delay,
-              ease: "easeInOut",
-            },
-          }}
-          whileHover={{
-            scale: 1.2,
-            transition: {
-              duration: 0.2,
-            },
-          }}
-        >
-          <TooltipProvider delayDuration={90}>
-            <Tooltip>
-              <TooltipTrigger>
-                <Link href={icon.link} target="_blank">
-                  <img src={icon.icon} className="md:w-7 w-6"></img>
-                </Link>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p className="text-sm text-[#1d1716]">{icon.name}</p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
-        </motion.div>
+        <TooltipProvider delayDuration={90} key={index}>
+          <Tooltip>
+            <TooltipTrigger>
+              <Link href={icon.link} target="_blank">
+                <img src={icon.icon} className="md:w-7 w-6"></img>
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-sm text-[#1d1716]">{icon.name}</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       ))}
     </div>
   );

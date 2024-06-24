@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 const lato = Lexend({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Pure Feedback",
+  title: "Jayash.dev",
   description: "Developed By Jayash Saini",
 };
 
@@ -17,6 +17,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.7.5/src/app/ci.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+        />
+      </head>
       <body className={`${lato.className} first-color overflow-x-hidden`}>
         <Navbar />
         {children}

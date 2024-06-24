@@ -5,6 +5,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <link rel="icon" href="./favicon.ico" />
         <link
           rel="stylesheet"
           type="text/css"

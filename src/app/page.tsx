@@ -5,6 +5,8 @@ import { FlipWords } from "@/components/ui/flipWords";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   const mainRef = useRef<HTMLDivElement>(null);
@@ -24,8 +26,8 @@ export default function Home() {
       className="w-full h-auto flex flex-col my-5 gap-5 text-[#f2f1e7] items-center relative opacity-0"
       ref={mainRef}
     >
-      <div className="w-full max-w-screen-lg px-4 md:mb-10">
-        <section id="home" className="w-full min-h-screen h-full ">
+      <div className="w-full max-w-screen-lg px-4 ">
+        <section id="home" className="w-full h-full mb-20">
           <div className="w-full md:text-8xl text-5xl text-center text-[#f2f1e7] font-light md:mb-20 mb-10 mt-10 md:py-16 py-8 header-font ">
             Build
             <FlipWords
@@ -37,15 +39,17 @@ export default function Home() {
           </div>
           <div className="w-full flex md:flex-row flex-col ">
             <div className="md:w-1/2  w-full flex items-center  justify-center">
-              <div className="md:w-[50%] w-[60%] overflow-visible rounded-xl">
-                <img
-                  src="/images/Avatar.jpg"
-                  alt="jayash"
-                  className="w-full h-full cursor-pointer rounded-xl hover:scale-105 duration-150 ease-in-out"
-                  onClick={() => {
-                    window.open("https://github.com/JayashSaini/");
-                  }}
-                />
+              <div className="md:w-[50%] w-[60%] rounded-xl">
+                <div className="overflow-hidden">
+                  <img
+                    src="/images/Avatar.jpg"
+                    alt="jayash"
+                    className="w-full h-full cursor-pointer rounded-xl hover:scale-105 duration-150 ease-in-out"
+                    onClick={() => {
+                      window.open("https://github.com/JayashSaini/");
+                    }}
+                  />
+                </div>
                 <Socials />
               </div>
             </div>
@@ -63,7 +67,13 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-sc  h-screen bg-red-500"></section>
+        <section className="w-full my-10">
+          <Skills />
+        </section>
+        <section className="w-full my-10">
+          <Projects />
+        </section>
+        <section className="w-full h-screen"></section>
       </div>
     </div>
   );
