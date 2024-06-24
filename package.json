@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@radix-ui/react-tooltip": "^1.1.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -20,6 +21,7 @@
     "react-dom": "^18",
     "react-simple-typewriter": "^5.0.1",
     "react-slick": "^0.30.2",
+    "sonner": "^1.5.0",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
     "types": "file:@radix-ui/react-tooltip"

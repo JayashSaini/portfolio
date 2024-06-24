@@ -1,12 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { InfiniteMovingCards } from "./ui/movingCards";
 interface Skill {
   name: string;
   iconClass: string;
   link?: string;
 }
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
 
 const Skills: React.FC = () => {
   const skillsData = {
@@ -38,24 +36,6 @@ const Skills: React.FC = () => {
     ],
   };
 
-  const skillRef = React.useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to(skillRef.current, {
-      opacity: 1,
-      duration: 1,
-      ease: "power2.out",
-      delay: 1,
-      scrollTrigger: {
-        trigger: skillRef.current,
-        start: "top bottom",
-        scrub: 1,
-        toggleActions: "play none none reverse",
-      },
-    });
-  }, []);
-
   const renderSkills = (skills: Skill[]) => {
     return skills.map((skill, index) => (
       <div
@@ -69,7 +49,7 @@ const Skills: React.FC = () => {
   };
 
   return (
-    <div className="w-full opacity-0" ref={skillRef}>
+    <div className="w-full opacity">
       <h2 className="md:text-4xl text-2xl mb-14 fontColor font-bold pb-5 border-b-[1px] border-[#f3bb77a6] ">
         Tech Stack
       </h2>

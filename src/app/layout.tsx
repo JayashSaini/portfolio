@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { Toaster } from "sonner";
 
 const lato = Lexend({ weight: "400", subsets: ["latin"] });
 
@@ -36,6 +37,7 @@ export default function RootLayout({
       <body className={`${lato.className} first-color overflow-x-hidden`}>
         <Navbar />
         {children}
+        <Toaster position="top-center" className="bg-black" />
       </body>
     </html>
   );

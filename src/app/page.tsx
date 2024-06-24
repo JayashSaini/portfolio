@@ -7,6 +7,7 @@ import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   const mainRef = useRef<HTMLDivElement>(null);
@@ -73,7 +74,9 @@ export default function Home() {
         <section className="w-full my-10">
           <Projects />
         </section>
-        <section className="w-full h-screen"></section>
+        <section className="w-full my-10">
+          <Contact />
+        </section>
       </div>
     </div>
   );
