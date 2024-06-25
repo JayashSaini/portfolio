@@ -36,8 +36,8 @@ const ContactMe: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="w-full py-9 max-w-screen-lg">
-      <div className="mx-auto px-4 md:px-8">
+    <section id="contact" className="w-full py-9 ">
+      <div className="w-full ">
         <h2 className="md:text-4xl text-2xl font-bold mb-8 font-fam fontColor border-b-2 border-[#f3bb7793] md:pb-5 pb-3">
           Get in Touch
         </h2>
@@ -59,7 +59,7 @@ const ContactMe: React.FC = () => {
               id="name"
               name="to_name"
               required
-              className="mt-1 block w-full px-3 py-2 bg-transparent border-[#402a23] rounded-md shadow-sm focus:outline-none focus:border-none sm:text-sm"
+              className="mt-1 block w-full px-3 py-2 bg-transparent border-[#402a23] rounded-md shadow-sm focus:outline-none  sm:text-sm"
             />
           </div>
           <div className="mb-4">
@@ -74,7 +74,7 @@ const ContactMe: React.FC = () => {
               id="email"
               name="user_email"
               required
-              className="mt-1 block w-full px-3 py-2 bg-transparent border-[#402a23] rounded-md shadow-sm focus:outline-none focus:border-none sm:text-sm"
+              className="mt-1 block w-full px-3 py-2 bg-transparent border-[#402a23] rounded-md shadow-sm focus:outline-none  sm:text-sm"
             />
           </div>
           <div className="mb-4">
@@ -89,7 +89,7 @@ const ContactMe: React.FC = () => {
               name="message"
               rows={5}
               required
-              className="mt-1 block w-full px-3 py-2 bg-transparent border-[#402a23] rounded-md shadow-sm focus:outline-none focus:border-none sm:text-sm"
+              className="mt-1 block w-full px-3 py-2 bg-transparent border-[#402a23] rounded-md shadow-sm focus:outline-none  sm:text-sm"
             />
           </div>
           <div className="flex justify-end">

@@ -74,7 +74,7 @@ export default function Home() {
         <section className="w-full my-10">
           <Projects />
         </section>
-        <section className="w-full my-10">
+        <section className="w-full my-10 ">
           <Contact />
         </section>
       </div>
