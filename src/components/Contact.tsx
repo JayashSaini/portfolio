@@ -1,10 +1,12 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "sonner";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Loader2 } from "lucide-react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 const ContactMe: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -35,8 +37,23 @@ const ContactMe: React.FC = () => {
     }
   };
 
+  const mainRef = useRef(null);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(mainRef.current, {
+      opacity: 1,
+      duration: 2,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: mainRef.current,
+        start: "top bottom",
+        end: "bottom center",
+      },
+    });
+  }, []);
+
   return (
-    <section id="contact" className="w-full py-9 ">
+    <section ref={mainRef} id="contact" className=" opacity-0 w-full py-9 ">
       <div className="w-full ">
         <h2 className="md:text-4xl text-2xl font-bold mb-8 font-fam fontColor border-b-2 border-[#f3bb7793] md:pb-5 pb-3">
           Get in Touch

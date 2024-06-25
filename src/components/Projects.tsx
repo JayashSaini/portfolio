@@ -1,5 +1,8 @@
 "use client";
 import Slider from "react-slick";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { useEffect, useRef } from "react";
 
 const Projects = () => {
   const settings = {
@@ -12,12 +15,69 @@ const Projects = () => {
     autoplaySpeed: 2000,
   };
 
+  const headingRef = useRef(null);
+  const project1 = useRef(null);
+  const project2 = useRef(null);
+  const project3 = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(headingRef.current, {
+      opacity: 1,
+      duration: 1,
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: headingRef.current,
+        start: "top bottom",
+        end: "bottom center",
+      },
+    });
+
+    gsap.to(project1.current, {
+      opacity: 1,
+      duration: 1,
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: project1.current,
+        start: "top bottom",
+        end: "bottom center",
+      },
+    });
+    gsap.to(project2.current, {
+      opacity: 1,
+      duration: 1,
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: project2.current,
+        start: "top bottom",
+        end: "bottom center",
+      },
+    });
+    gsap.to(project3.current, {
+      opacity: 1,
+      duration: 1,
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: project3.current,
+        start: "top bottom",
+        end: "bottom center",
+      },
+    });
+  }, []);
+
   return (
     <div className="w-full md:py-10 py-2 ">
-      <h2 className="  md:text-4xl text-2xl mb-14 fontColor font-bold pb-5 border-b-[1px] border-[#f3bb77a6] ">
+      <h2
+        ref={headingRef}
+        className="opacity-0 md:text-4xl text-2xl mb-14 fontColor font-bold pb-5 border-b-[1px] border-[#f3bb77a6] "
+      >
         Projects
       </h2>
-      <div className="w-full border-2 border-[#f3bb7796] px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6">
+      <div
+        ref={project1}
+        className="opacity-0 w-full border-2 border-[#f3bb7796] px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6"
+      >
         <div className="md:w-[45%] w-full">
           <h1 className="md:text-2xl text-xl font-bold ">
             Shoes Hub /{" "}
@@ -105,7 +165,10 @@ const Projects = () => {
           </Slider>
         </div>
       </div>
-      <div className=" w-full border-2 border-[#f3bb7796] px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6">
+      <div
+        ref={project2}
+        className="opacity-0 w-full border-2 border-[#f3bb7796] px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6"
+      >
         <div className="md:w-[45%] w-full">
           <h1 className="md:text-2xl text-xl font-bold ">
             Pure Feedback /{" "}
@@ -115,8 +178,8 @@ const Projects = () => {
           </h1>
           <p className="my-5 sm:block hidden">
             Pure Feedback, a versatile web application crafted for gathering
-            anonymous feedback effortlessly via a straightforward link. improve
-            user experiences, and open communication without compromising.
+            anonymous feedback tl via a straightforward link. improve user
+            experiences, and open communication without compromising.
           </p>
           <h2 className="font-semibold text-lg fontColor mt-5">Tech Used</h2>
           <div className="w-full mt-2 mb-6 flex justify-start md:gap-4 gap-2">
@@ -171,7 +234,10 @@ const Projects = () => {
           </Slider>
         </div>
       </div>
-      <div className=" w-full border-2 border-[#f3bb7796] px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6">
+      <div
+        ref={project3}
+        className="opacity-0 w-full border-2 border-[#f3bb7796] px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6"
+      >
         <div className="md:w-[45%] w-full">
           <h1 className="md:text-2xl text-xl font-bold ">
             Task Tracker /{" "}
