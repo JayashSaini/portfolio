@@ -1,8 +1,6 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { InfiniteMovingCards } from "./ui/movingCards";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
 
 interface Skill {
   name: string;
@@ -40,22 +38,6 @@ const Skills: React.FC = () => {
     ],
   };
 
-  const mainRef = useRef(null);
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to(mainRef.current, {
-      opacity: 1,
-      duration: 2,
-      ease: "power2.out",
-      delay: 1,
-      scrollTrigger: {
-        trigger: mainRef.current,
-        start: "top bottom",
-        end: "bottom center",
-      },
-    });
-  }, []);
-
   const renderSkills = (skills: Skill[]) => {
     return skills.map((skill, index) => (
       <div
@@ -69,7 +51,7 @@ const Skills: React.FC = () => {
   };
 
   return (
-    <div className="w-full opacity-0" ref={mainRef}>
+    <div className="w-full ">
       <h2 className="md:text-4xl text-2xl mb-14 fontColor font-bold pb-5 border-b-[1px] border-[#f3bb77a6] ">
         Tech Stack
       </h2>
