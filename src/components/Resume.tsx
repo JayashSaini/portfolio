@@ -2,7 +2,7 @@
 import Link from "next/link";
 const Resume = () => {
   const downloadUrl =
-    "https://docs.google.com/document/d/1E3b6vsZdyVp0m8mzAA2wOKCYymqEzqoMdwPDEHVEozI/export?format=pdf";
+    "https://docs.google.com/document/d/1MI8TQOTfINapudKwDwz-EWiBIK-M_pdd/export?format=pdf";
 
   https: return (
     <Link
