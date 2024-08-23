@@ -20,6 +20,91 @@ const Projects = () => {
       <div className="  w-full border-2 border-[#f3bb7796] px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6">
         <div className="md:w-[45%] w-full">
           <h1 className="md:text-2xl text-xl font-bold ">
+            WebWorld /{" "}
+            <span className="md:text-xl text-lg fontColor">
+              Learning Platform
+            </span>
+          </h1>
+          <p className="my-5 sm:block hidden">
+            An online learning platform designed for aspiring web developers.
+            Whether you're just starting or looking to sharpen your skills, Web
+            World offers comprehensive resources to help you grow as a
+            developer.
+          </p>
+          <h2 className="font-semibold text-lg fontColor mt-5">Tech Used</h2>
+          <div className="w-full mt-2 mb-6 flex justify-start md:gap-4 gap-2">
+            <i className="ci ci-2x ci-react"></i>
+            <i className="ci ci-2x ci-mongodb"></i>
+            <i className="ci ci-2x ci-redis"></i>
+            <i className="ci ci-2x ci-ts"></i>
+            <i className="ci ci-2x ci-expressjs"></i>
+            <i className="ci ci-2x ci-nodejs"></i>
+            <i className="ci ci-2x ci-tailwindcss"></i>
+          </div>
+          <div className="w-full my-3 flex gap-2">
+            <a
+              href="https://github.com/JayashSaini/WebWorld-Frontend"
+              target="_blank"
+            >
+              <button className="py-2 px-5 flex items-center justify-center gap-2 text-sm bg-white text-black rounded-[4px] hover:shadow-md hover:shadow-black hover:px-10 duration-150 ease-in-out">
+                <i className="ci ci-ci-ci-xl ci-github"></i>
+                Frontend
+              </button>
+            </a>
+            <a
+              href="https://github.com/JayashSaini/WebWorld-Backend"
+              target="_blank"
+            >
+              <button className="py-2 px-5 flex items-center justify-center gap-2 text-sm bg-white text-black rounded-[4px] hover:shadow-md hover:shadow-black hover:px-10 duration-150 ease-in-out">
+                <i className="ci ci-ci-ci-xl ci-github"></i>
+                Backend
+              </button>
+            </a>
+          </div>
+          <a href="https://tasktrackerbyjayash.vercel.app/" target="_blank">
+            <button className="w-full py-3 bg-color hover:bg-[#31221c] hover:tracking-wider rounded-[5px] flex justify-center items-center gap-1">
+              WebWorld
+            </button>
+          </a>
+        </div>
+        <div className="md:w-[55%] w-full overflow-hidden">
+          <Slider {...settings}>
+            <img
+              src={"/images/Project3/p1.png"}
+              alt=""
+              loading="lazy"
+              className="w-full md:h-[375px] rounded-xl"
+            />
+            <img
+              src={"/images/Project3/p2.png"}
+              alt=""
+              loading="lazy"
+              className="w-full md:h-[375px] rounded-xl"
+            />
+            <img
+              src={"/images/Project3/p3.png"}
+              alt=""
+              loading="lazy"
+              className="w-full md:h-[375px] rounded-xl"
+            />
+            <img
+              src={"/images/Project3/p4.png"}
+              alt=""
+              loading="lazy"
+              className="w-full md:h-[375px] rounded-xl"
+            />
+            <img
+              src={"/images/Project3/p5.png"}
+              alt=""
+              loading="lazy"
+              className="w-full md:h-[375px] rounded-xl"
+            />
+          </Slider>
+        </div>
+      </div>
+      <div className="  w-full border-2 border-[#f3bb7796] px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6">
+        <div className="md:w-[45%] w-full">
+          <h1 className="md:text-2xl text-xl font-bold ">
             Shoes Hub /{" "}
             <span className="md:text-xl text-lg fontColor">e-commerce</span>
           </h1>
@@ -164,81 +249,6 @@ const Projects = () => {
             />
             <img
               src={"/images/Project2/Screenshot from 2024-06-22 00-09-11.png"}
-              alt=""
-              loading="lazy"
-              className="w-full md:h-[375px] rounded-xl"
-            />
-          </Slider>
-        </div>
-      </div>
-      <div className="  w-full border-2 border-[#f3bb7796] px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6">
-        <div className="md:w-[45%] w-full">
-          <h1 className="md:text-2xl text-xl font-bold ">
-            Task Tracker /{" "}
-            <span className="md:text-xl text-lg fontColor">task manager</span>
-          </h1>
-          <p className="my-5 sm:block hidden">
-            Task Trackr is a state-of-the-art web application tailored for
-            efficient task management.it offers a seamless user experience with
-            distinct backend and frontend functionalities.
-          </p>
-          <h2 className="font-semibold text-lg fontColor mt-5">Tech Used</h2>
-          <div className="w-full mt-2 mb-6 flex justify-start md:gap-4 gap-2">
-            <i className="ci ci-2x ci-react"></i>
-            <i className="ci ci-2x ci-mysql"></i>
-            <i className="ci ci-2x ci-redis"></i>
-            <i className="ci ci-2x ci-ts"></i>
-            <i className="ci ci-2x ci-expressjs"></i>
-            <i className="ci ci-2x ci-nodejs"></i>
-          </div>
-          <div className="w-full my-3 flex gap-2">
-            <a
-              href="https://github.com/JayashSaini/TaskTracker-Frontend"
-              target="_blank"
-            >
-              <button className="py-2 px-5 flex items-center justify-center gap-2 text-sm bg-white text-black rounded-[4px] hover:shadow-md hover:shadow-black hover:px-10 duration-150 ease-in-out">
-                <i className="ci ci-ci-ci-xl ci-github"></i>
-                Frontend
-              </button>
-            </a>
-            <a
-              href="https://github.com/JayashSaini/taskTracker-Backend"
-              target="_blank"
-            >
-              <button className="py-2 px-5 flex items-center justify-center gap-2 text-sm bg-white text-black rounded-[4px] hover:shadow-md hover:shadow-black hover:px-10 duration-150 ease-in-out">
-                <i className="ci ci-ci-ci-xl ci-github"></i>
-                Backend
-              </button>
-            </a>
-          </div>
-          <a href="https://tasktrackerbyjayash.vercel.app/" target="_blank">
-            <button className="w-full py-3 bg-color hover:bg-[#31221c] hover:tracking-wider rounded-[5px] flex justify-center items-center gap-1">
-              Task Tracker
-            </button>
-          </a>
-        </div>
-        <div className="md:w-[55%] w-full overflow-hidden">
-          <Slider {...settings}>
-            <img
-              src={"/images/Project3/Screenshot from 2024-06-21 23-45-57.png"}
-              alt=""
-              loading="lazy"
-              className="w-full md:h-[375px] rounded-xl"
-            />
-            <img
-              src={"/images/Project3/Screenshot from 2024-06-21 23-46-07.png"}
-              alt=""
-              loading="lazy"
-              className="w-full md:h-[375px] rounded-xl"
-            />
-            <img
-              src={"/images/Project3/Screenshot from 2024-06-21 23-50-31.png"}
-              alt=""
-              loading="lazy"
-              className="w-full md:h-[375px] rounded-xl"
-            />
-            <img
-              src={"/images/Project3/Screenshot from 2024-06-21 23-50-44.png"}
               alt=""
               loading="lazy"
               className="w-full md:h-[375px] rounded-xl"
