@@ -27,10 +27,11 @@ const Projects = () => {
           </h1>
           <p className="my-5 sm:block hidden">
             An online learning platform designed for aspiring web developers.
-            Whether you're just starting or looking to sharpen your skills, Web
-            World offers comprehensive resources to help you grow as a
+            Whether you&apos;re just starting or looking to sharpen your skills,
+            Web World offers comprehensive resources to help you grow as a
             developer.
           </p>
+
           <h2 className="font-semibold text-lg fontColor mt-5">Tech Used</h2>
           <div className="w-full mt-2 mb-6 flex justify-start md:gap-4 gap-2">
             <i className="ci ci-2x ci-react"></i>
