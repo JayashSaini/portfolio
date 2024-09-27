@@ -30,19 +30,19 @@ body {
 }
 
 .first-color {
-  background: #1d1716;
+  background: #fff;
 }
 
 .bg-color {
-  background: #402a23;
+  background: #141414;
 }
 
 .third-color {
-  background: #a55233;
+  background: rgba(0, 0, 0, 0.589)
 }
 
 .fontColor {
-  color: #f3bc77;
+  color: #202020;
 }
 
 .header-font {

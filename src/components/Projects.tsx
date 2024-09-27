@@ -14,25 +14,112 @@ const Projects = () => {
 
   return (
     <div className="w-full md:py-10 py-2 ">
-      <h2 className="  md:text-4xl text-2xl mb-14 fontColor font-bold pb-5 border-b-[1px] border-[#f3bb77a6] ">
+      <h2 className="  md:text-4xl text-2xl mb-14 fontColor font-bold pb-5 border-b-[1px] border-[#0000008e] ">
         Projects
       </h2>
-      <div className="  w-full border-2 border-[#f3bb7796] px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6">
+      <div className="  w-full border-2 border-[#00000060] px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6">
         <div className="md:w-[45%] w-full">
-          <h1 className="md:text-2xl text-xl font-bold ">
+          <h1 className="md:text-2xl text-xl font-bold text-neutral-800">
+            ChicChat /{" "}
+            <span className="md:text-xl text-lg text-black">
+              Real Time Chat Platform
+            </span>
+          </h1>
+          <p className="my-5 sm:block hidden text-neutral-700">
+          Developed ChicChat, a real-time chat and video streaming web app using the MERN stack and Socket.IO for
+seamless messaging and low-latency video calls.
+
+          </p>
+
+        <div className="md:block hidden">
+        <h2 className="font-semibold text-lg text-neutral-800 mt-5">Tech Used</h2>
+          <div className="w-full mt-2 mb-6 flex justify-start md:gap-4 gap-2">
+            <i className="ci ci-2x ci-react"></i>
+            <i className="ci ci-2x ci-mongodb"></i>
+            <i className="ci ci-2x ci-ts"></i>
+            <i className="ci ci-2x ci-expressjs"></i>
+            <i className="ci ci-2x ci-nodejs"></i>
+            <i className="ci ci-2x ci-tailwindcss"></i>
+          </div>
+        </div>
+          <div className="w-full my-3 flex gap-2">
+            <a
+              href="https://github.com/JayashSaini/ChicChat-Frontend"
+              target="_blank"
+            >
+              <button className="py-2 px-5 flex items-center justify-center gap-2 text-sm bg-white text-[#111111] rounded-[4px]  hover:px-10 duration-150 ease-in-out border-[1px] border-[#303030]">
+                <i className="ci ci-ci-ci-xl ci-github"></i>
+                Frontend
+              </button>
+            </a>
+            <a
+              href="https://github.com/JayashSaini/ChicChat-Backend"
+              target="_blank"
+            >
+              <button className="py-2 px-5 flex items-center justify-center gap-2 text-sm bg-white text-[#111111] rounded-[4px]  hover:px-10 duration-150 ease-in-out border-[1px] border-[#303030]">
+                <i className="ci ci-ci-ci-xl ci-github"></i>
+                Backend
+              </button>
+            </a>
+          </div>
+          <a href="https://chicchat.vercel.app/" target="_blank">
+            <button className="w-full py-4 bg-black text-white hover:tracking-wider rounded-[5px] flex justify-center items-center gap-1">
+              ChicChat
+            </button>
+          </a>
+        </div>
+        <div className="md:w-[55%] w-full overflow-hidden border-[1px] border-[#2020205d] rounded-xl">
+          <Slider {...settings}>
+            <img
+              src={"/images/Project2/chicchat1.png"}
+              alt=""
+              loading="lazy"
+              className="w-full md:h-[375px] rounded-xl"
+            />
+            <img
+              src={"/images/Project2/chicchat2.png"}
+              alt=""
+              loading="lazy"
+              className="w-full md:h-[375px] rounded-xl"
+            />
+            <img
+              src={"/images/Project2/chicchat3.png"}
+              alt=""
+              loading="lazy"
+              className="w-full md:h-[375px] rounded-xl"
+            />
+            <img
+              src={"/images/Project2/chicchat4.png"}
+              alt=""
+              loading="lazy"
+              className="w-full md:h-[375px] rounded-xl"
+            />
+            <img
+              src={"/images/Project2/chicchat5.png"}
+              alt=""
+              loading="lazy"
+              className="w-full md:h-[375px] rounded-xl"
+            />
+          </Slider>
+        </div>
+      </div>
+      <div className="  w-full border-2 border-[#00000060] px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6">
+        <div className="md:w-[45%] w-full">
+          <h1 className="md:text-2xl text-xl font-bold text-neutral-800">
             WebWorld /{" "}
-            <span className="md:text-xl text-lg fontColor">
+            <span className="md:text-xl text-lg text-black">
               Learning Platform
             </span>
           </h1>
-          <p className="my-5 sm:block hidden">
+          <p className="my-5 sm:block hidden text-neutral-700">
             An online learning platform designed for aspiring web developers.
             Whether you&apos;re just starting or looking to sharpen your skills,
             Web World offers comprehensive resources to help you grow as a
             developer.
           </p>
+          <div className="md:block hidden">
 
-          <h2 className="font-semibold text-lg fontColor mt-5">Tech Used</h2>
+          <h2 className="font-semibold text-lg text-neutral-800 mt-5">Tech Used</h2>
           <div className="w-full mt-2 mb-6 flex justify-start md:gap-4 gap-2">
             <i className="ci ci-2x ci-react"></i>
             <i className="ci ci-2x ci-mongodb"></i>
@@ -42,12 +129,13 @@ const Projects = () => {
             <i className="ci ci-2x ci-nodejs"></i>
             <i className="ci ci-2x ci-tailwindcss"></i>
           </div>
+          </div>
           <div className="w-full my-3 flex gap-2">
             <a
               href="https://github.com/JayashSaini/WebWorld-Frontend"
               target="_blank"
             >
-              <button className="py-2 px-5 flex items-center justify-center gap-2 text-sm bg-white text-black rounded-[4px] hover:shadow-md hover:shadow-black hover:px-10 duration-150 ease-in-out">
+              <button className="py-2 px-5 flex items-center justify-center gap-2 text-sm bg-white text-[#111111] rounded-[4px]  hover:px-10 duration-150 ease-in-out border-[1px] border-[#303030]">
                 <i className="ci ci-ci-ci-xl ci-github"></i>
                 Frontend
               </button>
@@ -56,19 +144,19 @@ const Projects = () => {
               href="https://github.com/JayashSaini/WebWorld-Backend"
               target="_blank"
             >
-              <button className="py-2 px-5 flex items-center justify-center gap-2 text-sm bg-white text-black rounded-[4px] hover:shadow-md hover:shadow-black hover:px-10 duration-150 ease-in-out">
+              <button className="py-2 px-5 flex items-center justify-center gap-2 text-sm bg-white text-[#111111] rounded-[4px]  hover:px-10 duration-150 ease-in-out border-[1px] border-[#303030]">
                 <i className="ci ci-ci-ci-xl ci-github"></i>
                 Backend
               </button>
             </a>
           </div>
           <a href="https://webworld.vercel.app/" target="_blank">
-            <button className="w-full py-3 bg-color hover:bg-[#31221c] hover:tracking-wider rounded-[5px] flex justify-center items-center gap-1">
+            <button className="w-full py-4 bg-black text-white hover:tracking-wider rounded-[5px] flex justify-center items-center gap-1">
               WebWorld
             </button>
           </a>
         </div>
-        <div className="md:w-[55%] w-full overflow-hidden">
+        <div className="md:w-[55%] w-full overflow-hidden border-[1px] border-[#2020205d] rounded-xl">
           <Slider {...settings}>
             <img
               src={"/images/Project3/p1.png"}
@@ -103,18 +191,19 @@ const Projects = () => {
           </Slider>
         </div>
       </div>
-      <div className="  w-full border-2 border-[#f3bb7796] px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6">
+      <div className="  w-full border-2 border-[#00000060] px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6">
         <div className="md:w-[45%] w-full">
           <h1 className="md:text-2xl text-xl font-bold ">
             Shoes Hub /{" "}
-            <span className="md:text-xl text-lg fontColor">e-commerce</span>
+            <span className="md:text-xl text-lg text-neutral-800">e-commerce</span>
           </h1>
-          <p className="my-5 sm:block hidden">
+          <p className="my-5 sm:block hidden text-neutral-700">
             Shoes Hub is a cutting-edge e-commerce platform. Designed for shoe
             enthusiasts, it promises seamless functionality and a captivating
             UI/UX for an exceptional shopping journey.
           </p>
-          <h2 className="font-semibold text-lg fontColor mt-5">Tech Used</h2>
+          <div className="md:block hidden">
+          <h2 className="font-semibold text-lg text-neutral-800 mt-5">Tech Used</h2>
           <div className="w-full mt-2 mb-6 flex justify-start md:gap-4 gap-2">
             <i className="ci ci-2x ci-react"></i>
             <i className="ci ci-2x ci-redux"></i>
@@ -124,12 +213,13 @@ const Projects = () => {
             <i className="ci ci-2x ci-tailwindcss"></i>
             <i className="ci ci-2x ci-nodejs"></i>
           </div>
+          </div>
           <div className="w-full my-3 flex gap-2">
             <a
               href="https://github.com/JayashSaini/ShoesHubFrontend"
               target="_blank"
             >
-              <button className="py-2 px-5 flex items-center justify-center gap-2 text-sm hover:px-10 duration-150 ease-in-out bg-white text-black rounded-[4px] hover:shadow-md hover:shadow-black">
+              <button className="py-2 px-5 flex items-center justify-center gap-2 text-sm bg-white text-[#111111] rounded-[4px]  hover:px-10 duration-150 ease-in-out border-[1px] border-[#303030]">
                 <i className="ci ci-ci-ci-xl ci-github"></i>
                 Frontend
               </button>
@@ -138,25 +228,19 @@ const Projects = () => {
               href="https://github.com/JayashSaini/ShoesHubBackend/"
               target="_blank"
             >
-              <button className="py-2 px-5 flex items-center justify-center gap-2 text-sm bg-white text-black rounded-[4px] hover:shadow-md hover:shadow-black hover:px-10 duration-150 ease-in-out">
+              <button className="py-2 px-5 flex items-center justify-center gap-2 text-sm bg-white text-[#111111] rounded-[4px]  hover:px-10 duration-150 ease-in-out border-[1px] border-[#303030]">
                 <i className="ci ci-ci-ci-xl ci-github"></i>
                 Backend
               </button>
             </a>
           </div>
           <a href="https://online-shoeshub.vercel.app/" target="_blank">
-            <button className="w-full py-3 bg-color hover:bg-[#31221c] hover:tracking-wider rounded-[5px] flex justify-center items-center gap-1">
-              <img
-                src={"/images/Project1/favicon1.svg"}
-                alt=""
-                width={33}
-                height={33}
-              />
+          <button className="w-full py-4 bg-black text-white hover:tracking-wider rounded-[5px] flex justify-center items-center gap-1">
               Shoes Hub
             </button>
           </a>
         </div>
-        <div className="md:w-[55%] w-full overflow-hidden">
+        <div className="md:w-[55%] w-full overflow-hidden rounded-xl border-[1px] border-[#2020205d]">
           <Slider {...settings}>
             <img
               src={"/images/Project1/p1.png"}
@@ -184,72 +268,6 @@ const Projects = () => {
             />
             <img
               src={"/images/Project1/p5.png"}
-              alt=""
-              loading="lazy"
-              className="w-full md:h-[375px] rounded-xl"
-            />
-          </Slider>
-        </div>
-      </div>
-      <div className="  w-full border-2 border-[#f3bb7796] px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6">
-        <div className="md:w-[45%] w-full">
-          <h1 className="md:text-2xl text-xl font-bold ">
-            Pure Feedback /{" "}
-            <span className="md:text-xl text-lg fontColor">
-              anonymous feedback
-            </span>
-          </h1>
-          <p className="my-5 sm:block hidden">
-            Pure Feedback, a versatile web application crafted for gathering
-            anonymous feedback tl via a straightforward link. improve user
-            experiences, and open communication without compromising.
-          </p>
-          <h2 className="font-semibold text-lg fontColor mt-5">Tech Used</h2>
-          <div className="w-full mt-2 mb-6 flex justify-start md:gap-4 gap-2">
-            <i className="ci ci-2x ci-nextjs"></i>
-            <i className="ci ci-2x ci-mongodb"></i>
-            <i className="ci ci-2x ci-ts"></i>
-            <i className="ci ci-2x ci-mui"></i>
-          </div>
-          <div className="w-full my-3 flex gap-2">
-            <a
-              href="https://github.com/JayashSaini/PureFeedback"
-              target="_blank"
-            >
-              <button className="py-2 px-5 flex items-center justify-center gap-2 text-sm bg-white text-black rounded-[4px] hover:shadow-md hover:shadow-black hover:px-10 duration-150 ease-in-out ">
-                <i className="ci ci-ci-ci-xl ci-github"></i>
-                Github
-              </button>
-            </a>
-          </div>
-          <a href="https://pure-feedback.vercel.app/" target="_blank">
-            <button className="w-full py-3 bg-color hover:bg-[#31221c] hover:tracking-wider rounded-[5px] flex justify-center items-center gap-1">
-              Pure Feedback
-            </button>
-          </a>
-        </div>
-        <div className="md:w-[55%] w-full overflow-hidden">
-          <Slider {...settings}>
-            <img
-              src={"/images/Project2/Screenshot from 2024-06-22 00-07-51.png"}
-              alt=""
-              loading="lazy"
-              className="w-full md:h-[375px] rounded-xl "
-            />
-            <img
-              src={"/images/Project2/Screenshot from 2024-06-22 00-08-31.png"}
-              alt=""
-              loading="lazy"
-              className="w-full md:h-[375px] rounded-xl"
-            />
-            <img
-              src={"/images/Project2/Screenshot from 2024-06-22 00-09-03.png"}
-              alt=""
-              loading="lazy"
-              className="w-full md:h-[375px] rounded-xl"
-            />
-            <img
-              src={"/images/Project2/Screenshot from 2024-06-22 00-09-11.png"}
               alt=""
               loading="lazy"
               className="w-full md:h-[375px] rounded-xl"

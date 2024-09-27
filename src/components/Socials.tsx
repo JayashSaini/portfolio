@@ -48,11 +48,11 @@ const Socials: React.FC = () => {
           <Tooltip>
             <TooltipTrigger>
               <Link href={icon.link} target="_blank">
-                <img src={icon.icon} className="md:w-7 w-6"></img>
+                <img src={icon.icon} className="md:w-7 w-6 "></img>
               </Link>
             </TooltipTrigger>
             <TooltipContent>
-              <p className="text-sm text-[#1d1716]">{icon.name}</p>
+              <p className="text-sm text-[#fff]">{icon.name}</p>
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>

@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 export const InfiniteMovingCards = ({
   items,
   direction = "left",
-  speed = "fast",
+  speed = "slow",
   pauseOnHover = true,
   className,
 }: {
@@ -72,7 +72,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20  max-w-7xl overflow-hidden  ",
         className
       )}
     >
@@ -90,9 +90,9 @@ export const InfiniteMovingCards = ({
             key={item.name}
           >
             <blockquote>
-              <div className="flex justify-center  flex-col gap-4 items-center py-4 bg-color shadow-md ring-2 ring-white ring-opacity-75 select-none">
+              <div className="flex justify-center  flex-col gap-4 items-center py-4 bg-[#000000e8] shadow-md ring-2 ring-white ring-opacity-75 select-none">
                 <i className={`${item.iconClass} ci-2x`}></i>
-                <span className="md:text-2xl text-lg text-white">
+                <span className="md:text-2xl text-lg text-[#fff]">
                   {item.name}
                 </span>
               </div>

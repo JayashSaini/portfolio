@@ -42,7 +42,7 @@ const Skills: React.FC = () => {
     return skills.map((skill, index) => (
       <div
         key={index}
-        className="flex justify-center gap-4 items-center py-3 bg-color rounded-[5px] shadow-md ring-2 ring-white ring-opacity-75 select-none"
+        className="bg-[#000000d7] flex justify-center gap-4 items-center py-3  rounded-[5px] shadow-md ring-2 ring-white ring-opacity-75 select-none"
       >
         <i className={`${skill.iconClass} ci-2x`}></i>
         <span className="md:text-base text-sm text-white">{skill.name}</span>
@@ -52,7 +52,7 @@ const Skills: React.FC = () => {
 
   return (
     <div className="w-full ">
-      <h2 className="md:text-4xl text-2xl mb-14 fontColor font-bold pb-5 border-b-[1px] border-[#f3bb77a6] ">
+      <h2 className="md:text-4xl text-2xl mb-14 text-white font-bold pb-5 border-b-[1px] border-[#0000008e] ">
         Tech Stack
       </h2>
       <div className="md:grid hidden gap-10 ">
@@ -64,7 +64,7 @@ const Skills: React.FC = () => {
         </div>
         <div>
           <h3 className="text-2xl font-bold my-4">Backend</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 ">
             {renderSkills(skillsData.backend)}
           </div>
         </div>

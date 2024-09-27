@@ -2,14 +2,14 @@
 import Link from "next/link";
 const Resume = () => {
   const downloadUrl =
-    "https://drive.google.com/uc?export=download&id=1yht02kC690MPfCW6sJrCdPtlWnb1cTdL";
+    "https://drive.google.com/uc?export=download&id=12CVh74sSC6yaCj7INbhomx9i8xCc-Ix3";
 
   https: return (
     <Link
       href={downloadUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-color hover:bg-color duration-200 ease-in-out text-[#f2f1e7] font-bold md:py-3 md:px-6 px-4 py-2 border-[1px]  border-[#ffffffab] rounded focus:outline-none focus:shadow-outline md:text-lg text-sm"
+      className="bg-[#202020] duration-200 ease-in-out text-white font-bold md:py-3 md:px-6 px-4 py-2  md:rounded-[8px] rounded-[4px] focus:outline-none focus:shadow-outline text-sm"
       download={"Jayash Saini Resume"}
     >
       Download Resume
