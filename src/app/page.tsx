@@ -27,20 +27,20 @@ export default function Home() {
       className="w-full h-auto flex flex-col my-5 gap-5 text-[#111111] items-center relative opacity-0"
       ref={mainRef}
     >
-      <div className="w-full max-w-screen-lg px-4 ">
-        <section id="home" className="w-full h-full mb-20">
-          <div className="w-full md:text-8xl text-5xl text-center   text-[#202020] font-light md:mb-20 mb-10 mt-10 md:py-16 py-8 header-font ">
+      <div className="w-full h-full  max-w-screen-lg px-4 ">
+        <section id="home" className="w-full h-full mb-40">
+          <div className="w-full md:text-8xl text-5xl text-center   text-[#ff6f009a] font-light md:mb-20 mb-10 mt-10 md:py-16 py-8 header-font ">
             Build
             <FlipWords
               duration={2000}
-              className="fontColor"
+              className="text-[#ff6f009a]"
               words={["adaptive", "dynamic", "beautiful", "elegant", "awesome"]}
             />
             web app with MERN stack
           </div>
           <div className="w-full flex md:flex-row flex-col ">
             <div className="md:w-1/2  w-full flex items-center  justify-center">
-              <div className="md:w-[50%] w-[60%] rounded-xl">
+              <div className="md:w-[70%] w-[70%] rounded-xl">
                 <div className="overflow-hidden">
                   <img
                     src="/images/Avatar.jpg"
@@ -54,10 +54,11 @@ export default function Home() {
                 <Socials />
               </div>
             </div>
-            <div className="md:w-1/2 w-full md:text-xl text-sm  text-neutral-500 md:text-left text-center mt-5">
+            <div className="md:w-1/2 w-full md:text-lg text-sm  text-gray-600 md:text-left text-center mt-5">
               👋 Hi there, I&apos;m Jayash! I&apos;m a results-driven MERN stack
               developer with a passion for building cutting-edge web
               applications that make an impact.{" "}
+              <br />
               <span className="md:flex hidden">
                 I&apos;ve honed my skills in MongoDB, Express.js, React.js, and
                 Node.js to deliver high-quality solutions tailored to meet
@@ -68,13 +69,13 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full my-10">
+        <section className="w-full h-auto  my-20">
           <Skills />
         </section>
-        <section className="w-full my-10">
+        <section className="w-full  h-auto my-10">
           <Projects />
         </section>
-        <section className="w-full my-10 ">
+        <section className="w-full h-auto  my-10 ">
           <Contact />
         </section>
       </div>

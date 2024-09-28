@@ -14,25 +14,25 @@ const Projects = () => {
 
   return (
     <div className="w-full md:py-10 py-2 ">
-      <h2 className="  md:text-4xl text-2xl mb-14 fontColor font-bold pb-5 border-b-[1px] border-[#0000008e] ">
+      <h2 className="md:text-3xl text-2xl  mb-8 text-gray-800 font-bold pb-5 border-b-[1px] border-gray-300">
         Projects
       </h2>
-      <div className="  w-full border-2 border-[#00000060] px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6">
+      <div className="  w-full border-[1px] border-gray-200  px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6">
         <div className="md:w-[45%] w-full">
-          <h1 className="md:text-2xl text-xl font-bold text-neutral-800">
+          <h1 className="md:text-xl text-lg font-bold  text-gray-800">
             ChicChat /{" "}
-            <span className="md:text-xl text-lg text-black">
+            <span className="md:text-xl text-lg text-gray-700">
               Real Time Chat Platform
             </span>
           </h1>
-          <p className="my-5 sm:block hidden text-neutral-700">
+          <p className="my-5 sm:block hidden text-base text-gray-500">
           Developed ChicChat, a real-time chat and video streaming web app using the MERN stack and Socket.IO for
 seamless messaging and low-latency video calls.
 
           </p>
 
         <div className="md:block hidden">
-        <h2 className="font-semibold text-lg text-neutral-800 mt-5">Tech Used</h2>
+        <h2 className="font-semibold text-lg text-gray-800 mt-5">Tech Used</h2>
           <div className="w-full mt-2 mb-6 flex justify-start md:gap-4 gap-2">
             <i className="ci ci-2x ci-react"></i>
             <i className="ci ci-2x ci-mongodb"></i>
@@ -63,7 +63,7 @@ seamless messaging and low-latency video calls.
             </a>
           </div>
           <a href="https://chicchat.vercel.app/" target="_blank">
-            <button className="w-full py-4 bg-black text-white hover:tracking-wider rounded-[5px] flex justify-center items-center gap-1">
+            <button className="w-full py-4 bg-neutral-900 text-white hover:tracking-wider rounded-[5px] flex justify-center items-center gap-1">
               ChicChat
             </button>
           </a>
@@ -103,15 +103,15 @@ seamless messaging and low-latency video calls.
           </Slider>
         </div>
       </div>
-      <div className="  w-full border-2 border-[#00000060] px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6">
+      <div className="  w-full border-[1px] border-gray-200  px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6">
         <div className="md:w-[45%] w-full">
-          <h1 className="md:text-2xl text-xl font-bold text-neutral-800">
+          <h1 className="md:text-xl text-lg font-bold text-gray-800 text-gray-800">
             WebWorld /{" "}
-            <span className="md:text-xl text-lg text-black">
+            <span className="md:text-xl text-lg text-gray-700">
               Learning Platform
             </span>
           </h1>
-          <p className="my-5 sm:block hidden text-neutral-700">
+          <p className="my-5 sm:block hidden text-base text-gray-500">
             An online learning platform designed for aspiring web developers.
             Whether you&apos;re just starting or looking to sharpen your skills,
             Web World offers comprehensive resources to help you grow as a
@@ -119,7 +119,7 @@ seamless messaging and low-latency video calls.
           </p>
           <div className="md:block hidden">
 
-          <h2 className="font-semibold text-lg text-neutral-800 mt-5">Tech Used</h2>
+          <h2 className="font-semibold text-lg text-gray-800 mt-5">Tech Used</h2>
           <div className="w-full mt-2 mb-6 flex justify-start md:gap-4 gap-2">
             <i className="ci ci-2x ci-react"></i>
             <i className="ci ci-2x ci-mongodb"></i>
@@ -151,7 +151,7 @@ seamless messaging and low-latency video calls.
             </a>
           </div>
           <a href="https://webworld.vercel.app/" target="_blank">
-            <button className="w-full py-4 bg-black text-white hover:tracking-wider rounded-[5px] flex justify-center items-center gap-1">
+            <button className="w-full py-4 bg-neutral-900 text-white hover:tracking-wider rounded-[5px] flex justify-center items-center gap-1">
               WebWorld
             </button>
           </a>
@@ -191,19 +191,19 @@ seamless messaging and low-latency video calls.
           </Slider>
         </div>
       </div>
-      <div className="  w-full border-2 border-[#00000060] px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6">
+      <div className="  w-full  border-[1px] border-gray-200 px-5 sm:py-12 py-8 rounded-xl flex  flex-col-reverse md:flex-row gap-4 my-6">
         <div className="md:w-[45%] w-full">
-          <h1 className="md:text-2xl text-xl font-bold ">
+          <h1 className="md:text-xl text-lg font-bold text-gray-800 ">
             Shoes Hub /{" "}
             <span className="md:text-xl text-lg text-neutral-800">e-commerce</span>
           </h1>
-          <p className="my-5 sm:block hidden text-neutral-700">
+          <p className="my-5 sm:block hidden text-base text-gray-500">
             Shoes Hub is a cutting-edge e-commerce platform. Designed for shoe
             enthusiasts, it promises seamless functionality and a captivating
             UI/UX for an exceptional shopping journey.
           </p>
           <div className="md:block hidden">
-          <h2 className="font-semibold text-lg text-neutral-800 mt-5">Tech Used</h2>
+          <h2 className="font-semibold text-lg text-gray-800 mt-5">Tech Used</h2>
           <div className="w-full mt-2 mb-6 flex justify-start md:gap-4 gap-2">
             <i className="ci ci-2x ci-react"></i>
             <i className="ci ci-2x ci-redux"></i>
@@ -235,7 +235,7 @@ seamless messaging and low-latency video calls.
             </a>
           </div>
           <a href="https://online-shoeshub.vercel.app/" target="_blank">
-          <button className="w-full py-4 bg-black text-white hover:tracking-wider rounded-[5px] flex justify-center items-center gap-1">
+          <button className="w-full py-4 bg-neutral-900 text-white hover:tracking-wider rounded-[5px] flex justify-center items-center gap-1">
               Shoes Hub
             </button>
           </a>

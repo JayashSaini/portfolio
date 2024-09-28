@@ -42,14 +42,14 @@ const Navbar: React.FC = () => {
     >
       <nav
         ref={navRef}
-        className="border-b-2 border-[#0000008e] gap-3 z-10 w-full mx-5 max-w-screen-lg opacity-0"
+        className="border-b-[1px] border-gray-300 gap-3 z-10 w-full mx-5 max-w-screen-lg opacity-0"
       >
-        <div className="container md:py-6 py-4 flex justify-between items-center mx-auto md:px-4 px-0">
+        <div className="container md:py-6 py-4 flex justify-between  mx-auto md:px-4 px-0">
           <a
             href="/"
             onClick={(e) => handleClick(e, "#home")}
             ref={nameRef}
-            className="md:text-2xl text-base font-bold text-[#111111] font-fam"
+            className="md:text-2xl  text-base  text-gray-800 font-light"
           >
             Jayash Saini
           </a>

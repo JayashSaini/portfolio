@@ -38,7 +38,7 @@ const ContactMe: React.FC = () => {
   return (
     <section id="contact" className=" w-full py-9 ">
       <div className="w-full ">
-        <h2 className="md:text-4xl text-2xl font-bold mb-8 font-fam fontColor border-b-2 border-[#00000062] md:pb-5 pb-3">
+        <h2 className="md:text-3xl text-xl border-b-[1px] border-gray-300 font-bold mb-8 text-gray-800 md:pb-5 pb-3">
           Get in Touch
         </h2>
         <form
@@ -50,7 +50,7 @@ const ContactMe: React.FC = () => {
           <div className="mb-4">
             <label
               htmlFor="name"
-              className="block md:text-lg text-sm font-medium fontColor"
+              className="block  text-sm font-medium text-gray-800"
             >
               Name
             </label>
@@ -59,13 +59,13 @@ const ContactMe: React.FC = () => {
               id="name"
               name="to_name"
               required
-              className="mt-1 block w-full px-3 py-2 bg-transparent border-[#0007] rounded-md shadow-sm focus:outline-none  sm:text-sm"
+              className="mt-1 block w-full px-3 py-2 bg-transparent border-gray-400 rounded-[5px] shadow-sm focus:outline-none  text-sm"
             />
           </div>
           <div className="mb-4">
             <label
               htmlFor="email"
-              className="block md:text-lg text-sm font-medium fontColor"
+              className="block  text-sm font-medium text-gray-800"
             >
               Email
             </label>
@@ -74,13 +74,13 @@ const ContactMe: React.FC = () => {
               id="email"
               name="user_email"
               required
-              className="mt-1 block w-full px-3 py-2 bg-transparent border-[#0007] rounded-md shadow-sm focus:outline-none  sm:text-sm"
+              className="mt-1 block w-full px-3 py-2 bg-transparent border-gray-400 rounded-[5px] shadow-sm focus:outline-none  text-sm"
             />
           </div>
           <div className="mb-4">
             <label
               htmlFor="message"
-              className="block md:text-lg text-sm font-medium fontColor"
+              className="block  text-sm font-medium text-gray-800"
             >
               Message
             </label>
@@ -89,13 +89,13 @@ const ContactMe: React.FC = () => {
               name="message"
               rows={5}
               required
-              className="mt-1 block w-full px-3 py-2 bg-transparent border-[#0007] rounded-md shadow-sm focus:outline-none  sm:text-sm"
+              className="mt-1 block w-full px-3 py-2 bg-transparent border-gray-400 rounded-[5px] shadow-sm focus:outline-none  text-sm"
             />
           </div>
           <div className="flex justify-end">
             <button
               type="submit"
-              className="w-full bg-black text-white py-5 rounded-[4px] focus:outline-none flex items-center justify-center"
+              className="w-full bg-neutral-900 text-white py-4 rounded-[4px] focus:outline-none flex items-center justify-center"
             >
               {isLoading ? (
                 <Loader2 className="animate-spin text-xl" />

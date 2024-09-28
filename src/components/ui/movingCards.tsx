@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 export const InfiniteMovingCards = ({
   items,
   direction = "left",
-  speed = "slow",
+  speed = "normal",
   pauseOnHover = true,
   className,
 }: {
@@ -90,9 +90,9 @@ export const InfiniteMovingCards = ({
             key={item.name}
           >
             <blockquote>
-              <div className="flex justify-center  flex-col gap-4 items-center py-4 bg-[#000000e8] shadow-md ring-2 ring-white ring-opacity-75 select-none">
+              <div className="flex justify-center  flex-col gap-4 items-center py-4 bg-gray-200 shadow-md ring-2 ring-white ring-opacity-75 select-none">
                 <i className={`${item.iconClass} ci-2x`}></i>
-                <span className="md:text-2xl text-lg text-[#fff]">
+                <span className="md:text-2xl text-lg text-gray-800">
                   {item.name}
                 </span>
               </div>
