@@ -95,60 +95,63 @@ export default function RootLayout({
         />
 
         {/* JSON-LD Structured Data */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "http://schema.org",
-            "@type": "Person",
-            name: "Jayash Saini",
-            url: "https://jayash-dev.vercel.app",
-            jobTitle: "Full Stack Developer",
-            worksFor: {
-              "@type": "Organization",
-              name: "Freelance",
-            },
-            sameAs: [
-              "https://github.com/JayashSaini/",
-              "https://www.linkedin.com/in/jayash-saini-371bb0267/",
-            ],
-            knowsAbout: [
-              "MERN Stack",
-              "Full-Stack Web Development",
-              "React",
-              "Next.js",
-              "Node.js",
-              "Express.js",
-              "HTML",
-              "JavaScript",
-              "CSS",
-              "MongoDB",
-              "MySQL",
-            ],
-            alumniOf: {
-              "@type": "CollegeOrUniversity",
-              name: "Parishkar College of Global Excellence",
-            },
-            project: [
-              {
-                "@type": "Real Time Chat Platform",
-                name: "ChicChat",
-                url: "https://chicchat.vercel.app/",
-                description:
-                  "Developed ChicChat, a real-time chat and video streaming web app using the MERN stack and Socket.IO for seamless messaging and low-latency video calls.",
-                programmingLanguage:
-                  "React.js, Express.js, Node.js, MongoDB, TypeScript",
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "http://schema.org",
+              "@type": "Person",
+              name: "Jayash Saini",
+              url: "https://jayash-dev.vercel.app",
+              jobTitle: "Full Stack Developer",
+              worksFor: {
+                "@type": "Organization",
+                name: "Freelance",
               },
-              {
-                "@type": "Online Learning Platform",
-                name: "WebWorld",
-                url: "https://webworld.vercel.app/",
-                description:
-                  "An online learning platform designed for aspiring web developers, offering comprehensive resources to help grow as a developer.",
-                programmingLanguage:
-                  "React.js, Express.js, Node.js, MongoDB, TypeScript",
+              sameAs: [
+                "https://github.com/JayashSaini/",
+                "https://www.linkedin.com/in/jayash-saini-371bb0267/",
+              ],
+              knowsAbout: [
+                "MERN Stack",
+                "Full-Stack Web Development",
+                "React",
+                "Next.js",
+                "Node.js",
+                "Express.js",
+                "HTML",
+                "JavaScript",
+                "CSS",
+                "MongoDB",
+                "MySQL",
+              ],
+              alumniOf: {
+                "@type": "CollegeOrUniversity",
+                name: "Parishkar College of Global Excellence",
               },
-            ],
-          })}
-        </script>
+              project: [
+                {
+                  "@type": "Real Time Chat Platform",
+                  name: "ChicChat",
+                  url: "https://chicchat.vercel.app/",
+                  description:
+                    "Developed ChicChat, a real-time chat and video streaming web app using the MERN stack and Socket.IO for seamless messaging and low-latency video calls.",
+                  programmingLanguage:
+                    "React.js, Express.js, Node.js, MongoDB, TypeScript",
+                },
+                {
+                  "@type": "Online Learning Platform",
+                  name: "WebWorld",
+                  url: "https://webworld.vercel.app/",
+                  description:
+                    "An online learning platform designed for aspiring web developers, offering comprehensive resources to help grow as a developer.",
+                  programmingLanguage:
+                    "React.js, Express.js, Node.js, MongoDB, TypeScript",
+                },
+              ],
+            }),
+          }}
+        />
       </head>
       <body className={`${lato.className} first-color overflow-x-hidden`}>
         <Navbar />
